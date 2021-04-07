@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family:Open Sans}
-P {font-family: Roboto Condensed}
+body, h1,h2,h3,h4,h5,h6 {font: Open Sans ; font-weight: bold}
+P , li {font: Roboto Condensed; font-weight: normal}
+.fnt { color: #F2F2F2}
+
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #FEFEFE;}
@@ -22,17 +24,17 @@ P {font-family: Roboto Condensed}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-blue">
     <img src="img/SocialMediaLogo-White.svg" style="width:100%">
-    <p>HOME</p>
   </a>
+
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="color: #000000">
     <i class="fa fa-user w3-xxlarge" ></i>
     <p>ABOUT</p>
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="color: #000000">
     <i class="fa fa-eye w3-xxlarge"></i>
-    <p>FEEDS</p>
+    <p>WATCH</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="color: #000000">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -62,17 +64,16 @@ P {font-family: Roboto Condensed}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Who Are We</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p> We’re Non-Extinct, a group of 4 friends who decided to start a software firm together. We thrive in the
+    <p class="fnt"> We’re Non-Extinct, a group of 4 friends who decided to start a software firm together. We thrive in the
       unconventional and are firm in the belief that innovation takes risk, courage, sleepless nights and a lot of coffee. We aim to
       be the continental leader in tech innovation and embracing diversity at social, economic and intellectual levels.
       In January 2021, we officially became Non-Extinct Software Laboratories (Cue the applause).
       <br><br>
-      Oh, if you’re wondering what Non-Extinct means, well to us anyway, check out the video, we’ll let you in on the secret.
  </p>
     <h2 class="w3-padding-16 w3-text-light-grey">What We Do</h2>
-    <p > We create websites and software tailored to the needs of your business by:</p>
-
-    <ul>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="fnt"> We create websites and software tailored to the needs of your business by:</p>
+    <ul  class="fnt">
       <li >Creating products that cater to your users’ needs by ensuring that the right problem is identified
         in order to design a digital solution that is effective through the human-centred design approach.</li>
         <br>
@@ -85,22 +86,19 @@ P {font-family: Roboto Condensed}
 
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">FEEDS</h2>
+    <h2 class="w3-text-light-grey">Watch</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
+      <p class="fnt" style="margin:0 16px">Oh, if you’re wondering what Non-Extinct means, well to us anyway,
+      check out the video, we’ll let you in on the secret:</p>
+      <br>
+      <div class="w3-center">
+        <video width="400" height="500" controls>
+    <source src="jay_insp.mp4.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
       </div>
     <!-- End photo grid -->
     </div>
@@ -110,17 +108,16 @@ P {font-family: Roboto Condensed}
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Where To Find Us</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:200px" class="w3-opacity w3-color-blue">
 
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Johannesburg, South Africa</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +27 79 448 4738</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: info@nonextinct.com</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: nonextinct.software@gmail.com</p>
     </div><br>
-    <p>So whether you’re a small business or brand that needs a website,
+    <p class="fnt">So whether you’re a small business or brand that needs a website,
       app or system, hit us up on email, we got you!: </p>
 
-    <form action="mailto:singita.ngobeni@nonextinct.com" method="post" enctype="text/plain">
+    <form action="mailto:nonextinct.software@gmail.com" method="post" enctype="text/plain">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -136,17 +133,19 @@ P {font-family: Roboto Condensed}
   </div>
 
     <!-- Footer -->
+    <div class="w3-center">
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <a href="https://www.facebook.com/Non-Extinct-Software-Laboratories-100380435506904"  target="_blank"><i class="fa fa-facebook-official w3-hover-opacity w3-text-white w3-xxxlarge"></i></a>
+    &nbsp;
+    <a href="https://www.instagram.com/nonextinct_lab/" target="_blank"><i class="fa fa-instagram w3-hover-opacity w3-text-white w3-xxxlarge"></i></a>
+    &nbsp;
+    <a href="https://twitter.com/nonextinct_lab"  target="_blank"><i class="fa fa-twitter w3-hover-opacity w3-text-white w3-xxxlarge"></i></a>
+    &nbsp;
+    <a href="https://www.linkedin.com/company/non-extinct-software-laboratories"  target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-text-white w3-xxxlarge"></i></a>
+    <p class="fnt" style="font-size:10px !important">Property of nonextinct labs (Pty) Ltd</p>
   <!-- End footer -->
   </footer>
-
+</div>
 <!-- END PAGE CONTENT -->
 </div>
 
