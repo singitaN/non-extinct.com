@@ -1,3 +1,3 @@
 # nonextinct
 
-Go to our [website](www.nonextinct.com)
+Go to our [website](https://www.nonextinct.com)
